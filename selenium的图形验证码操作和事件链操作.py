@@ -15,9 +15,9 @@ chaojiying = Chaojiying_Client('账号', '密码', '938157')
 edge = Edge(options=option)
 edge.get('https://beta.mcbbs.net/login')
 
-edge.find_element(By.XPATH,'//*[@id="el-id-8955-21"]').send_keys('2904523991@qq.com')
+edge.find_element(By.XPATH,'//*[@id="el-id-8955-21"]').send_keys('账号')
 
-edge.find_element(By.XPATH,'//*[@id="el-id-8955-22"]').send_keys('Aocnsd1725361201')
+edge.find_element(By.XPATH,'//*[@id="el-id-8955-22"]').send_keys('密码')
 
 
 edge.find_element(By.XPATH,'//*[@id="app"]/section/main/div[2]/div/div[3]/button').click()
