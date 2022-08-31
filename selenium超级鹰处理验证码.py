@@ -13,7 +13,7 @@ eage.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[2]/input'
 img = eage.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/div/img').screenshot_as_png
 
 #处理验证码
-chaojiying = Chaojiying_Client('13802830346', 'Aocnsd1725361201', '938157')
+chaojiying = Chaojiying_Client('账号', '密码', '938157')
 dic = chaojiying.PostPic(img, 1902)
 varify_code = dic['pic_str']
 
