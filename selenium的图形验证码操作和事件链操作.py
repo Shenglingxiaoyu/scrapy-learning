@@ -11,7 +11,7 @@ option.add_experimental_option('useAutomationExtension', False)
 option.add_experimental_option('excludeSwitches', ['enable-automation', 'enable-logging'])
 
 
-chaojiying = Chaojiying_Client('13802830346', 'Aocnsd1725361201', '938157')
+chaojiying = Chaojiying_Client('账号', '密码', '938157')
 edge = Edge(options=option)
 edge.get('https://beta.mcbbs.net/login')
 
