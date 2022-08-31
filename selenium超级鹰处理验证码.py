@@ -8,8 +8,8 @@ eage = Edge()
 
 eage.get('https://www.chaojiying.com/user/login/')
 
-eage.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[1]/input').send_keys('13802830346')
-eage.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[2]/input').send_keys('Aocnsd1725361201')
+eage.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[1]/input').send_keys('账号')
+eage.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[2]/input').send_keys('密码')
 img = eage.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/div/img').screenshot_as_png
 
 #处理验证码
