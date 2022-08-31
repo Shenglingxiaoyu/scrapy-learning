@@ -1,6 +1,6 @@
 import re
 #findall:匹配字符串中所有符合正则的内容，返回对象为数组
-list = re.findall(r'\d+','我的QQ号是：2904523991')                                    #正则表达式，字符串
+list = re.findall(r'\d+','我的QQ号是：123456789')                                    #正则表达式，字符串
 print(list)            #注意在findall的情况下，不能用group
 
 #finditer：匹配字符串中的所有内容，返回的是迭代器，饱含了多个match对象
@@ -9,23 +9,23 @@ print(list)            #注意在findall的情况下，不能用group
 如果是findall的话则会返回所有信息'''                            #match匹配
 
 
-it = re.finditer(r'\d+','我的QQ号是：2904523991')                 #正则表示式前面加r的意义是为了使反斜杠不使后面的字符转义，表达原来的意思
+it = re.finditer(r'\d+','我的QQ号是：123456789')                 #正则表示式前面加r的意义是为了使反斜杠不使后面的字符转义，表达原来的意思
 for match in it:
     print(match.group())              #group的作用是取组
 
 
 #search:返回的是match对象，唯一一个数据，拿数据需要group（也是全文匹配）  ,返回只有一个match数据
-search = re.search(r'\d+','我的QQ号是2904523991')
+search = re.search(r'\d+','我的QQ号是123456789')
 print(search.group())
 
 
-m = re.match(r'\d+','2904523991')                 #re.match从头开始匹配
+m = re.match(r'\d+','123456789')                 #re.match从头开始匹配
 print(m.group())
 
 
 #正则表达式的预加载
 obj = re.compile(r'\d+')
-response = obj.finditer('你好，在吗，我的QQ号是2904523991')
+response = obj.finditer('你好，在吗，我的QQ号是123456789')
 for i in response:
     print(i.group())
 
